@@ -7,6 +7,8 @@ WORKDIR /app
 ## Step 2:
 # Copy source code to working directory
 COPY ./app.py .
+COPY ./requirements.txt .
+COPY ./model_data ./model_data
 
 ## Step 3:
 # hadolint ignore=DL3013
